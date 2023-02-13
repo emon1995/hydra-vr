@@ -30,6 +30,8 @@
             colors: {
               clifford: "#da373d",
               bodyColor: " #302C42",
+              primaryColor: "#8176AF",
+              primaryToSecondaryColor: "#C0B7E8",
             },
           },
         },
@@ -73,5 +75,49 @@
         </div>
       </nav>
     </header>
+    <!-- MAIN SECTION -->
+    <main>
+      <!-- BANNER SECTION -->
+      <section
+        class="flex lg:flex-row flex-col-reverse justify-between items-center mt-12 lg:text-left text-center"
+      >
+        <!-- BANNER DETAILS -->
+        <div>
+          <h2 class="lg:text-5xl text-xl font-bold mb-8">
+            <span
+              class="lg:text-5xl text-4xl text-transparent bg-clip-text bg-gradient-to-r from-primaryToSecondaryColor to-primaryColor"
+              >Dive</span
+            >
+            Into The Depths <br />
+            Of
+            <span
+              class="lg:text-5xl text-4xl text-transparent bg-clip-text bg-gradient-to-r from-primaryToSecondaryColor to-primaryColor"
+              >Virtual Reality</span
+            >
+          </h2>
+          <p class="lg:block hidden mb-12">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+            sed do eiusmod tempor incididunt ut labore et dolore <br />
+            nisl tincidunt eget. Lectus mauris eros in vitae .
+          </p>
+          <div class="flex lg:justify-start justify-center items-center">
+            <button
+              class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] rounded-full border-[#8176AF] border-2 px-8 py-4 text-black font-bold hover:border-2 hover:border-white hover:bg-none hover:text-white"
+            >
+              BUILD YOUR WORLD
+            </button>
+            <img
+              class="lg:block hidden"
+              src="./images/arrow-small-right.png"
+              alt="arrow"
+            />
+          </div>
+        </div>
+        <!-- BANNER IMAGE -->
+        <div class="mb-4">
+          <img src="./images/Mask group.png" alt="" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
