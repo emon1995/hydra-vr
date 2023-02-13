@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hydra VR</title>
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="./images/Frame (1).png"
+      type="image/x-icon"
+    />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            montserrat: ["Montserrat", "sans - serif"],
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              bodyColor: " #302C42",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-bodyColor font-montserrat text-white w-11/12 mx-auto">
+    <!-- HEADER SECTION -->
+    <header class="mt-4">
+      <!-- NAVBAR SECTION -->
+      <nav class="flex text-center justify-between items-center">
+        <!-- LOGO -->
+        <div class="flex justify-center items-center gap-3">
+          <img class="object-cover" src="./images/Frame (1).png" alt="Frame" />
+          <img class="h-2/4" src="./images/Frame.png" alt="Frame" />
+        </div>
+        <!-- MENU ITEMS -->
+        <div class="lg:block hidden">
+          <ul class="flex gap-5 font-bold">
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">TECHNOLOGY</a></li>
+            <li><a href="">HOW TO</a></li>
+          </ul>
+        </div>
+        <!-- BUTTONS -->
+        <div class="lg:flex gap-4 mt-4 hidden">
+          <button
+            class="border-white border-2 font-bold hover:bg-gradient-to-r hover:from-[#8176AF] hover:to-[#C0B7E8] hover:border-[#8176AF] hover:text-black rounded-full px-8 py-4"
+          >
+            CONTACT US
+          </button>
+          <button
+            class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] rounded-full border-[#8176AF] border-2 px-8 py-4 text-black font-bold hover:border-2 hover:border-white hover:bg-none hover:text-white"
+          >
+            JOIN HYDRA
+          </button>
+        </div>
+        <div class="lg:hidden block">
+          <img src="./images/Hamburger-Button.png" alt="" />
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
