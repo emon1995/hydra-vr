@@ -32,20 +32,23 @@
               bodyColor: " #302C42",
               primaryColor: "#8176AF",
               primaryToSecondaryColor: "#C0B7E8",
+              bgPrimaryColor: " rgba(58, 52, 86, 0.95)",
+              bgSecondaryColor: "#211E2E",
+              borderPrimaryColor: "rgba(192, 183, 232, 0.33)",
             },
           },
         },
       };
     </script>
   </head>
-  <body class="bg-bodyColor font-montserrat text-white w-11/12 mx-auto">
+  <body class="bg-bodyColor font-montserrat text-white box-border h-screen">
     <!-- HEADER SECTION -->
-    <header class="mt-4">
+    <header class="w-11/12 mx-auto pt-4">
       <!-- NAVBAR SECTION -->
       <nav class="flex text-center justify-between items-center">
         <!-- LOGO -->
         <div class="flex justify-center items-center gap-3">
-          <img class="object-cover" src="./images/Frame (1).png" alt="Frame" />
+          <img class="h-2/4" src="./images/Frame (1).png" alt="Frame" />
           <img class="h-2/4" src="./images/Frame.png" alt="Frame" />
         </div>
         <!-- MENU ITEMS -->
@@ -76,7 +79,7 @@
       </nav>
     </header>
     <!-- MAIN SECTION -->
-    <main>
+    <main class="w-11/12 mx-auto">
       <!-- BANNER SECTION -->
       <section
         class="flex lg:flex-row flex-col-reverse justify-between items-center mt-12 lg:text-left text-center"
@@ -117,6 +120,124 @@
         <div class="mb-4">
           <img src="./images/Mask group.png" alt="" />
         </div>
+      </section>
+      <!-- CONTACT SECTION -->
+      <section>
+        <div
+          class="flex items-center justify-between bg-gradient-to-r from-bgSecondaryColor via-bgPrimaryColor to-bgSecondaryColor mt-8 p-8 shadow-lg rounded-full"
+        >
+          <img
+            class="lg:hidden"
+            src="./images/chevron-circle-right.png"
+            alt=""
+          />
+          <!-- LOCATION -->
+          <div class="flex items-center">
+            <img
+              class="lg:w-20 w-11"
+              src="./images/Location-Icon.png"
+              alt="Location-Icon"
+            />
+            <div>
+              <h2 class="font-bold text-2xl lg:block md:block hidden">
+                Pay Us a Visit
+              </h2>
+              <p class="text-sm">Union St, Seattle, WA 98101, United States</p>
+            </div>
+          </div>
+          <!-- CALL -->
+          <div
+            class="hidden lg:flex items-center gap-4 border-borderPrimaryColor px-12 border-r-2 border-l-2"
+          >
+            <img src="./images/phone-call.png" alt="Location-Icon" />
+            <div>
+              <h2 class="font-bold text-2xl">Give Us a Call</h2>
+              <p class="text-sm">(110) 1111-1010</p>
+            </div>
+          </div>
+          <!-- MESSAGE -->
+          <div class="hidden lg:flex justify-between items-center gap-4">
+            <img src="./images/mail.png" alt="Location-Icon" />
+            <div>
+              <h2 class="font-bold text-2xl">Send Us a Message</h2>
+              <p class="text-sm">Contact@HydraVTech.com</p>
+            </div>
+          </div>
+          <img
+            class="lg:hidden"
+            src="./images/chevron-circle-right1.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <!-- INTRODUCTION SECTION -->
+      <section class="lg:flex items-center justify-between mt-12">
+        <div>
+          <h1 class="font-bold text-3xl text-center">INTRODUCTION</h1>
+          <div class="lg:flex items-center gap-4">
+            <h2 class="text-3xl text-center">TO HYDRA VR</h2>
+            <img
+              class="lg:block hidden lg:text-left text-center"
+              src="./images/Component 1.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <p class="w-1/2 lg:block hidden">
+          Vitae sapien pellentesque habitant morbi tristique senectus et netus
+          et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit
+          amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra
+          aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in.
+          Lectus magna fringilla urna porttitor rhoncus vitae.
+        </p>
+      </section>
+      <!-- ABOUT SECTION -->
+      <section
+        class="lg:flex items-center justify-between gap-32 mt-12 lg:text-left text-center"
+      >
+        <img src="./images/Mask group (1).png" alt="Mask" />
+        <div>
+          <h1 class="font-bold text-3xl">ABOUT</h1>
+          <h1 class="text-3xl mb-12">HYDRA VR</h1>
+          <p class="mb-12">
+            Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus
+            mattis rhoncus urna neque viverra justo. Vivamus at augue eget arcu
+            dictum. Ultrices gravida dictum fusce ut placerat orci. Aenean et
+            tortor at risus viverra adipiscing at in. Mattis aliquam faucibus
+            purus in massa. Est placerat in egestas erat imperdiet sed.
+            Consequat semper viverra nam libero justo laoreet sit amet. Aliquam
+            etiam erat velit scelerisque in dictum non consectetur a. Laoreet
+            sit amet cursus sit amet. Vel eros donec ac odio tempor orci
+            dapibus. Sem nulla pha retra diam sit amet nisl suscipit adipiscing
+            bibendum. Leo a diam sollicitudi n tempor.
+          </p>
+          <button
+            class="bg-gradient-to-r from-[#8176AF] to-[#C0B7E8] rounded-full border-[#8176AF] border-2 px-8 py-4 text-black font-bold hover:border-2 hover:border-white hover:bg-none hover:text-white"
+          >
+            LET'S GET IN TOUCH
+          </button>
+        </div>
+      </section>
+      <!-- BUILD SECTION -->
+      <section class="lg:flex items-center justify-between mt-12">
+        <div>
+          <h1 class="font-bold text-3xl lg:text-left text-center">WHY BUILD</h1>
+          <div class="lg:flex items-center gap-4">
+            <h2 class="text-3xl lg:text-left text-center">WITH HYDRA?</h2>
+            <img
+              class="lg:block hidden"
+              src="./images/Component 1.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <p class="w-1/2 lg:block hidden">
+          Vitae sapien pellentesque habitant morbi tristique senectus et netus
+          et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit
+          amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra
+          aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in.
+          Lectus magna fringilla urna porttitor rhoncus vitae.
+        </p>
       </section>
     </main>
   </body>
