@@ -27,6 +27,10 @@
             montserrat: ["Montserrat", "sans - serif"],
           },
           extend: {
+            backgroundImage: {
+              technoImg:
+                "url('./images/pexels-rodnae-productions-8097332 1.png')",
+            },
             colors: {
               clifford: "#da373d",
               bodyColor: " #302C42",
@@ -243,7 +247,7 @@
       <section class="">
         <div class="lg:flex flex justify-between items-center gap-4 relative">
           <img
-            class="bg-primaryToSecondaryColor rounded-full border-4 border-bgSecondaryColor absolute z-10 left-0 -ml-4"
+            class="bg-primaryToSecondaryColor rounded-full border-4 border-bgSecondaryColor absolute z-10 left-0 -ml-4 lg:hidden block"
             src="./images/chevron-small-down2.png"
             alt=""
           />
@@ -342,11 +346,25 @@
             </div>
           </div>
           <img
-            class="bg-primaryToSecondaryColor rounded-full border-4 border-bgSecondaryColor absolute z-10 right-0 -mr-4"
+            class="bg-primaryToSecondaryColor rounded-full border-4 border-bgSecondaryColor absolute z-10 right-0 -mr-4 lg:hidden block"
             src="./images/chevron-small-down1.png"
             alt=""
           />
         </div>
+      </section>
+      <!-- TECHNOLOGY & HARDWARE SECTION -->
+      <section
+        class="mt-12 bg-technoImg bg-cover bg-no-repeat flex flex-col items-center justify-center rounded-full py-16 relative"
+      >
+        <div class="text-center">
+          <h1 class="lg:text-3xl font-bold">TECHNOLOGY & HARDWARE</h1>
+          <h1 class="lg:text-3xl">USED BY HYDRA VR.</h1>
+        </div>
+        <img
+          class="bg-primaryToSecondaryColor rounded-full border-4 border-bgSecondaryColor absolute z-10 bottom-0 -mb-7"
+          src="./images/chevron-small-down.png"
+          alt=""
+        />
       </section>
     </main>
   </body>
